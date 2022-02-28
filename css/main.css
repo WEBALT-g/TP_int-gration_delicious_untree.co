@@ -41,7 +41,7 @@ header {
     margin: 10px 20px 10px 10px;
 }
 
-a {
+.wrapper a {
     text-decoration: none;
     color: black;
     padding: 15px;
@@ -103,11 +103,19 @@ header .dropdown-1 :hover {
 
 .btn-carte {
     height: 50px;
-    width: 170px;
+    width: 200px;
+    background-color: #CE1212;
     border-radius: 30px;
     border: none;
-    background-color: #CE1212;
+}
+
+.btn-carte:hover {
+    background-color: #a70e0e;
+}
+
+.btn-carte a {
     text-transform: uppercase;
+    text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 0.9em;
