@@ -1,12 +1,26 @@
 /*************** HEADER *************/
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
 }
 
 header {
     max-width: auto;
     height: 80px;
     background-color: #EEEEEE;
+}
+
+.btn-reserver {
+    height: 40px;
+    width: 180px;
+    border-radius: 30px;
+    border: none;
+    background-color: #CE1212;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-left: 50px;
 }
 
 .logo {
@@ -19,18 +33,18 @@ header {
     color: #CE1212;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    padding: 15px;
-}
-
 .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: 10px 20px 10px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
 }
 
 .navbar {
@@ -54,34 +68,52 @@ header .dropdown-1 :hover {
 /*********** SECTION 1 ************/
 
 .section-1 {
-    margin: 0 auto;
-    max-width: 1080px;
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
+    background-color: #EEEEEE;
 }
 
-.section-1 .left-container {
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.container .left-container {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    margin-top: 20px;
 }
 
-.section-1 h2 {
+.container h2 {
     font-weight: bold;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     font-family: 'Amatic SC', sans-serif;
-    font-size: 3.5em;
+    font-size: 5em;
     line-height: 70px;
 }
 
-.section-1 p {
+.container p {
     line-height: 22px;
     margin-bottom: 30px;
 }
 
-.section-1 img {
+.btn-carte {
+    height: 50px;
+    width: 170px;
+    border-radius: 30px;
+    border: none;
+    background-color: #CE1212;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.container img {
     max-width: 500px;
     top: 20px;
     left: 20px;
@@ -89,11 +121,11 @@ header .dropdown-1 :hover {
     vertical-align: middle;
 }
 
-.section-1 .right-container {
+.container .right-container {
     position: relative;
 }
 
-.section-1 .right-container .circle-one {
+.container .right-container .circle-one {
     position: absolute;
     vertical-align: middle;
     width: 100%;
@@ -105,7 +137,7 @@ header .dropdown-1 :hover {
     animation: spin 18s linear infinite;
 }
 
-.section-1 .right-container .circle-two {
+.container .right-container .circle-two {
     position: absolute;
     vertical-align: middle;
     width: 100%;
@@ -126,12 +158,3 @@ header .dropdown-1 :hover {
   @keyframes spin {
     100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
   }
-
-button {
-    text-transform: uppercase;
-    font-size: bold;
-    background-color: #CE1212;
-    border-radius: 30px;
-    border: none;
-    height: 40px;
-}
