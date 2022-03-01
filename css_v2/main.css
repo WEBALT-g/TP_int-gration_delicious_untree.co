@@ -386,15 +386,7 @@ nav .menu-dropdown li:hover .sous-dropdown {
 
 .section-4 {
     max-width: 100%;
-    padding: 100px 0px;
-}
-
-.section-4 .container {
-    max-width: 1150px;
-    display: flex;  
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 50px 0px;
 }
 
 .content-center {
@@ -403,6 +395,7 @@ nav .menu-dropdown li:hover .sous-dropdown {
     justify-content: center;
     align-items: center;
 }
+
 .text-center {
     display: flex;
 	flex-direction: column;
@@ -410,6 +403,11 @@ nav .menu-dropdown li:hover .sous-dropdown {
 	justify-content: center;
 	align-items: center;
     text-align: center;
+    padding-bottom: 50px;
+}
+
+.text-center .text p {
+    max-width: 580px;
 }
 
 .container-titre p {
@@ -418,14 +416,16 @@ nav .menu-dropdown li:hover .sous-dropdown {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: .1rem;
+    margin-bottom: 0px;
 }
 
 .section-4 h2 {
     font-family: 'Amatic SC', sans-serif;
     font-size: 50px;
+    margin-bottom: 0px;
 }
 
-.section-4 h2 .titre3 {
+.section-4 h2 .titre2 {
     color: rgb(0, 0, 0);
     font-weight: lighter;
 }
@@ -435,8 +435,26 @@ nav .menu-dropdown li:hover .sous-dropdown {
     font-weight: bold;
 }
 
+.left-text-event {
+    padding-right: 100px;
+}
+
+.left-text-event p {
+    max-width: 500px;
+    padding-bottom: 30px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.left-text-event .price-event p {
+    max-width: 500px;
+    margin-bottom: -30px;
+    color: #ce1212;
+    font-size: 20px;
+}
+
 .left-text-event ul {
     list-style: none;
+    color: rgb(0, 0, 0, 0.5);
 }
   
 .left-text-event ul li::before {
@@ -445,5 +463,42 @@ nav .menu-dropdown li:hover .sous-dropdown {
     font-weight: lighter;
     display: inline-block;
     width: 1em;
-    margin-left: -1em;
+    padding-bottom: 5px;
+}
+
+.container-section-4 .event-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.right-img-event img {
+    max-width: 540px;
+    border-radius: 15px;
+}
+
+/******************* SECTION 5 ******************/
+
+.section-5 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+}
+
+.section-5 .container-section-5 h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px;
+}
+
+.section-5 p {
+    max-width: 540px;
+    margin-bottom: 30px;
+    text-align: center;
 }
