@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css_v2/main.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
         </style>
@@ -20,44 +20,69 @@
 
 <body>
     <header>
-        <nav class="wrapper">
-            <a href="index.html" class="logo">
-                <h1>Delicious</h1>
-                <span class="point-logo">.</span>
-            </a>
+        <nav class="site-nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
 
-            <ul class="navbar">
-                <li>
-                    <a href="menu.html">Menu</a>
-                </li>
-                    <ul class="dropdown-1">
-                        <li>
-                            <a href="#">Toute la carte</a>
-                        </li>
-                        <li>
-                            <a href="#">Menu du midi</a>
-                        </li>
-                        <li>
-                            <a href="#">Menu du soir</a>
-                        </li>
-                    </ul>
-                
-                <li>
-                    <a href="evenements.html">Évènements</a>
-                </li>
-                <li>
-                    <a href="galerie.html">Galerie</a>
-                </li>
-                <li>
-                    <a href="a-propos-de-nous.html">À propos de nous</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
+                    <h1>
+                        Delicious
+                    </h1>
 
-                <button class="btn-reserver">
-                    <div href="#">Réserver une table</div>
+                    <span class="point-logo">
+                        .
+                    </span>
+                </a>
+
+                <ul class="navbar">
+                    <li class="accueil">
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="submenu">
+                        <a href="menu.html">Menu</a>
+                            <ul class="menu-dropdown">
+                                <li>
+                                    <a href="#">Petit-déjeuner</a>
+                                </li>
+                                <li>
+                                    <a href="#">Déjeuner</a>
+                                        <ul class="sous-dropdown">
+                                            <li>
+                                                <a href="#">Repas express</a>
+                                                <img src="img/bowl-2.png" alt="">
+                                            </li>
+                                            <li>
+                                                <a href="#">Pause déjeuner</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Déjeuner d'affaire</a>
+                                            </li>
+                                        </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Dîner</a>
+                                </li>
+                                <li>
+                                    <a href="#">Boissons</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li>
+                        <a href="evenements.html">Évènements</a>
+                    </li>
+                    <li>
+                        <a href="galerie.html">Galerie</a>
+                    </li>
+                    <li>
+                        <a href="a-propos-de-nous.html">À propos de nous</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                </ul>
+
+                <button class="btn-style" type="button">
+                    <a href="#">Réserver une table</a>
                 </button>
-            </ul>
+            </div>
         </nav>
 
     </header>
@@ -67,7 +92,7 @@
             <div class="left-container">
                 <h2>Profitez de votre nourriture saine et délicieuse</h2>
                 <p>Lorem ipsum dolor sit amet consectetur
-                   <a href="#"><span>adipisicing elit</span></a>
+                   <a href="#"><span class="underline">Adipisicing elit</span></a>
                     . Alias ipsa sapiente, fuga quisquam autem doloribus, modi nisi velit veniam vel ipsam.
                 </p>
 
@@ -78,8 +103,6 @@
             </div>
 
             <div class="right-container">
-                <img src="img/bowl.png" alt="chicken thaï bowl">
-
                 <span class="circle-one">
                     <img src="img/circle-one.png" alt="circle-one">
                 </span>
@@ -87,9 +110,14 @@
                 <span class="circle-two">
                     <img src="img/circle-two.png" alt="circle-two">
                 </span>
+                <div class="img-bowl">
+                    <img src="img/bowl.png" alt="chicken thaï bowl">
+                </div>
             </div>
         </div>
     </section>
+
+
 
 </body>
 </html>
