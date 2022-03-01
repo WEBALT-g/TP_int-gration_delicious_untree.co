@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     background-color: #EEEEEE;
     font-size: 16px;
@@ -29,7 +29,6 @@ nav .site-nav {
 }
 
 .nav-container {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,7 +49,7 @@ nav .site-nav {
 
 .logo:hover {
     color: rgb(0, 0, 0, 0.8);
-    transition: 0.3s ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
 
 .logo .point-logo {
@@ -78,7 +77,7 @@ nav .site-nav {
 
 .navbar > li a:hover {
     color: rgb(0, 0, 0);
-    transition: 0.3s ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
 
 nav ul::after {
@@ -117,7 +116,6 @@ nav li:hover .menu-dropdown {
     max-width: 50%;
 }
 
-
 nav .menu-dropdown li:hover .sous-dropdown {
     display: inline-flex;
     position: relative;
@@ -129,7 +127,55 @@ nav .menu-dropdown li:hover .sous-dropdown {
     box-shadow: 0px 0px 5px 5px rgba(201, 201, 201, 0.3) ;
 }
 
+/************** BUTTON ***************/
 
+.btn-style {
+    background-color: #ce1212;
+    padding: 15px 30px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    max-width: 250px;
+    letter-spacing: 0.05rem;
+    border-radius: 30px;
+    position: relative;
+    transition: 0.2s all ease-in-out;
+  }
+
+.btn-style a {
+    color: #EEEEEE;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-style:before {
+    display: block;
+    position: absolute;
+    background: transparent;
+    border: none;
+    border-radius: 0.3rem;
+    transform: translateY(5px) scale(0.9);
+    content: "";
+    height: 5px;
+    z-index: -1;
+    bottom: -1%;
+    left: 0;
+    right: 0;
+    transition: 0.2s all ease-in-out;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.btn-style:hover:before {
+    transform: translateY(8px) scale(0.8);
+    opacity: 0.8;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.btn-style:hover {
+    transform: translateY(-5px);
+    background-color: #df3b3b;
+}
 
 
 /*********** SECTION 1 ************/
@@ -140,8 +186,7 @@ nav .menu-dropdown li:hover .sous-dropdown {
 
 .container {
     margin: 0 auto;
-    max-width: 1080px;
-    background-color: #EEEEEE;
+    max-width: 1150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,47 +197,29 @@ nav .menu-dropdown li:hover .sous-dropdown {
 .container .left-container {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
 }
 
 .container h2 {
     font-weight: bold;
     padding-bottom: 25px;
     font-family: 'Amatic SC', sans-serif;
-    font-size: 5em;
-    line-height: 70px;
+    font-size: 70px;
+    line-height: 1.2;
+    max-width: 500px;
 }
 
 .container p {
-    line-height: 22px;
-    margin-bottom: 30px;
+    line-height: 1.6;
+    margin-bottom: 40px;
     color: #333;
-    font-size: 1.2em;
+    font-size: 16px;
+    max-width: 450px;
 }
 
 .container p .underline {
     text-decoration: none;
     box-shadow: 0 2px 0 0 #ce1212;
     color: black;
-}
-
-.btn-carte {
-    height: 50px;
-    width: 200px;
-    background-color: #CE1212;
-    border-radius: 30px;
-    border: none;
-}
-
-.btn-carte:hover {
-    background-color: #a70e0e;
-}
-
-.btn-carte a {
-    text-transform: uppercase;
-    color: white;
-    font-weight: bold;
-    font-size: 0.9em;
 }
 
 .container img {
@@ -245,3 +272,178 @@ nav .menu-dropdown li:hover .sous-dropdown {
   @keyframes spin {
     100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
   }
+
+/*************** SECTION 2 **************/
+
+.section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 200px 0px;
+}
+
+
+
+/**************** SECTION 3 *************/
+
+.section-3 {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+}
+
+.container-titre-avis p {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+.section-3 h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+.section-3 h2 .titre2 {
+    color: #ce1212;
+    font-weight: bold;
+}
+
+.section-3 .container-section-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-avis {
+    width: 575px;
+}
+
+.container-avis img {
+    max-width: 15%;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.container-avis h3 {
+    color: #ce1212;
+}
+
+.container-avis .metier p {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.container-avis .avis p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 30px;
+    max-width: 430px;
+}
+
+.container-galerie p {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+.container-galerie {
+    width: 575px;
+}
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galerie img {
+    box-sizing: border-box;
+    max-width: 25%;
+    margin: 20px 20px 0px 0px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.galerie img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s all ease-in-out;
+}
+
+.section-3 .btn-style {
+    margin-top: 15px;
+}
+
+/***************** SECTION 4 **************/
+
+.section-4 {
+    max-width: 100%;
+    padding: 100px 0px;
+}
+
+.section-4 .container {
+    max-width: 1150px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-center {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+}
+
+.container-titre p {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+.section-4 h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px;
+}
+
+.section-4 h2 .titre3 {
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+
+.section-4 h2 .titre3 {
+    color: #ce1212;
+    font-weight: bold;
+}
+
+.left-text-event ul {
+    list-style: none;
+}
+  
+.left-text-event ul li::before {
+    content: "\002713";
+    color: #ce1212;
+    font-weight: lighter;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
