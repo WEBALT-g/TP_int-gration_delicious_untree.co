@@ -502,3 +502,142 @@ nav .menu-dropdown li:hover .sous-dropdown {
     margin-bottom: 30px;
     text-align: center;
 }
+
+/****************** FOOTER ************/
+
+.footer {
+    max-width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+}
+
+.footer .container-footer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container-footer h2 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 30px 0px;
+    max-width: 160px;
+}
+
+.container-footer p {
+    color: rgb(0, 0, 0, 0.8);
+    font-size: 14px;
+    max-width: 400px;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-social .icon-instagram {
+    background-color: #EEEEEE;
+    margin: 10px 10px;
+    border-radius: 20px;
+}
+
+.column1 {
+    padding: 0px 15px;
+    max-width: 380px;
+}
+
+.column2 {
+    margin: 0px 0px 0px 95px;
+    padding: 0px 15px;
+    max-width: 190px;
+}
+
+.column3 {
+    padding: 0px 15px;
+    max-width: 190px;
+}
+
+.column4 {
+    padding: 0px 15px;
+    max-width: 255px;
+}
+
+.column2 ul li {
+    margin: 0px 0px 10px;
+}
+
+.column3 ul li {
+    margin: 0px 0px 10px;
+}
+
+.column4 ul li {
+    margin: 0px 0px 10px;
+}
+
+.column2 ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.column2 ul li a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    transition: 0.8s;
+}
+
+.column3 ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.column3 ul li a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    transition: 0.8s;
+}
+
+.column4 ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.column4 .adress{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.column4 ul li a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    transition: 0.8s;
+}
+
+.copyright {
+    margin-top: 80px;
+}
+
+.copyright p {
+    color: rgb(0, 0, 0, 0.8);
+    font-size: 14px;
+}
+
+.copyright p a {
+    color: rgb(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 0 0 #ce1212;
+}
