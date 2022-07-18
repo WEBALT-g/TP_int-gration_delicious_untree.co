@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css_v2/main.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
         </style>
@@ -34,25 +33,13 @@
 
                 <ul class="navbar">
                     <li class="submenu">
-                        <a href="menu.html">Menu</a>
+                        <a href="#">Menu</a>
                             <ul class="menu-dropdown">
                                 <li>
                                     <a href="#">Petit-déjeuner</a>
                                 </li>
                                 <li>
                                     <a href="#">Déjeuner</a>
-                                        <ul class="sous-dropdown">
-                                            <li>
-                                                <a href="#">Repas express</a>
-                                                <img src="img/bowl-2.png" alt="">
-                                            </li>
-                                            <li>
-                                                <a href="#">Pause déjeuner</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Déjeuner d'affaire</a>
-                                            </li>
-                                        </ul>
                                 </li>
                                 <li>
                                     <a href="#">Dîner</a>
@@ -63,16 +50,16 @@
                             </ul>
                     </li>
                     <li>
-                        <a href="evenements.html">Évènements</a>
+                        <a href="#">Évènements</a>
                     </li>
                     <li>
-                        <a href="galerie.html">Galerie</a>
+                        <a href="#">Galerie</a>
                     </li>
                     <li>
-                        <a href="a-propos-de-nous.html">À propos de nous</a>
+                        <a href="#">À propos de nous</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="#">Contact</a>
                 </ul>
 
                 <button class="btn-style" type="button">
@@ -114,7 +101,7 @@
     </div>
 
     <div class="section-2">
-        <div class="container-section-2">
+    <!--<div class="container-section-2">
             <div class="caroussel-menu">
                 <ul class="nav-caroussel">
                     <li>
@@ -150,20 +137,162 @@
                     </li>
                 </ul>
             </div>
+        </div>-->
+
+        <div class="tabs-container">
+            <div class="tabs" data-anim="1">Petit-déjeuner</div>
+            <div class="tabs active" data-anim="2">Déjeuner</div>
+            <div class="tabs" data-anim="3">Dîner</div>
+            <div class="tabs" data-anim="4">Dessert</div>
         </div>
 
-        <div class="titre-menu">
-            <div class="titre-menu2">
-                <h3>
-                    Menu
-                </h3>
+        <div class="content active-content" data-anim="1">
 
-                <h2>
-                    Déjeuner
-                </h2>
+            <div class="titre-menu">
+                <div class="titre-menu2">
+                    <h3>
+                        Menu
+                    </h3>
+    
+                    <h2>
+                        Petit-déjeuner
+                    </h2>
+                </div>
+            </div>
+
+            <div class="content-plats">
+                <div class="plats-dejeuner">
+                    <div class="container-plat1">
+                        <div class="image-plat">
+                            <img src="img/bowl.png" alt="">
+                            
+                            <div class="text-plat-container">
+                                <p>
+                                    Sauce Italienne aux champignons
+                                </p>
+                                
+                                <div class="price-plat">
+                                    <p>
+                                        19,35€
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-plat2">
+                    <div class="image-plat">
+                        <img src="img/bowl-2.png" alt="">
+    
+                        <div class="text-plat-container">
+                            <p>
+                                Sauce Italienne aux champignons
+                            </p>
+                            
+                            <div class="price-plat">
+                                <p>
+                                    19,35€
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container-plat3">
+                    <div class="image-plat">
+                        <img src="img/bowl-3.png" alt="">
+    
+                        <div class="text-plat-container">
+                            <p>
+                                Sauce Italienne aux champignons
+                            </p>
+                            
+                            <div class="price-plat">
+                                <p>
+                                    19,35€
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <div class="content active-content" data-anim="2">
+
+            <div class="titre-menu">
+                <div class="titre-menu2">
+                    <h3>
+                        Menu
+                    </h3>
+    
+                    <h2>
+                        Déjeuner
+                    </h2>
+                </div>
+            </div>
+
+            <div class="content-plats">
+                <div class="plats-dejeuner">
+                    <div class="container-plat1">
+                        <div class="image-plat">
+                            <img src="img/bowl.png" alt="">
+                        </div>
+                        
+                        <div class="text-plat-container">
+                            <p>
+                                Sauce Italienne aux champignons
+                            </p>
+                            
+                            <div class="price-plat">
+                                <p>
+                                    19,35€
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-plat2">
+                    <div class="image-plat">
+                        <img src="img/bowl-2.png" alt="">
+
+                        <div class="text-plat-container">
+                            <p>
+                                Sauce Italienne aux champignons
+                            </p>
+                            
+                            <div class="price-plat">
+                                <p>
+                                    19,35€
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-plat3">
+                    <div class="image-plat">
+                        <img src="img/bowl-3.png" alt="">
+
+                        <div class="text-plat-container">
+                            <p>
+                                Sauce Italienne aux champignons
+                            </p>
+                            
+                            <div class="price-plat">
+                                <p>
+                                    19,35€
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+<!--
         <div class="plats-dejeuner">
             <div class="container-plat1">
                 <div class="image-plat">
@@ -275,7 +404,7 @@
         </div>
 
     </div>
-
+-->
     <div class="section-3">
         <div class="container-section-3">
             <div class="container-left">
@@ -577,6 +706,7 @@
                     </a>
             </p>
         </div>
-    </div>
+    </div>-->
+    <script src="script.js"></script>
 </body>
 </html>

@@ -120,7 +120,7 @@ nav .menu-dropdown li:hover .sous-dropdown {
     display: inline-flex;
     position: relative;
     max-width: 600px;
-    margin-left: 150px;
+    margin-left: 220px;
     z-index: 10;
     border-bottom: solid 2px #333;
     line-height: 30px;
@@ -285,14 +285,10 @@ nav .menu-dropdown li:hover .sous-dropdown {
     padding: 100px 0px;
 }
 
-.container-section-2 ul {
+.tabs-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.container-section-2 ul li a {
+    width: 500px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-size: 12px;
@@ -300,23 +296,11 @@ nav .menu-dropdown li:hover .sous-dropdown {
     color: rgb(0, 0, 0, 0.5);
 }
 
-.container-section-2 ul li a p:hover {
+.tabs-container .tabs:hover {
     font-weight: bold;
     box-shadow: 0 2px 0 0 #ce1212;
     color: rgb(0, 0, 0);
-}
-
-.container-section-2 ul li {
-    padding: 10px 20px;
-}
-
-.section-2 .titre-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 50px 0px;
+    cursor: pointer;
 }
 
 .titre-menu h3 {
@@ -327,9 +311,34 @@ nav .menu-dropdown li:hover .sous-dropdown {
     letter-spacing: .1rem;
 }
 
+.section-2 .titre-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
 .titre-menu2 h2 {
     font-family: 'Amatic SC', sans-serif;
     font-size: 50px;
+}
+
+.content {
+    position: absolute;
+    width: 1200px;
+    opacity: 0;
+}
+
+.content-plats {
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
 }
 
 .plats-dejeuner {
@@ -341,9 +350,29 @@ nav .menu-dropdown li:hover .sous-dropdown {
 }
 
 .image-plat img {
-    width: 45%;
+    width: 300px;
 }
 
+.active {
+    font-weight: bold;
+    box-shadow: 0 2px 0 0 #ce1212;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.active-content {
+    animation: fade 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
 /**************** SECTION 3 *************/
@@ -355,6 +384,7 @@ nav .menu-dropdown li:hover .sous-dropdown {
     justify-content: center;
     flex-wrap: wrap;
     padding: 50px 10px;
+    margin-top: 600px;
 }
 
 .container-titre-avis p {
